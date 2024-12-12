@@ -5,11 +5,11 @@ import { IoLocation } from "react-icons/io5";
 
 function Footer() {
   return (
-    <div className='bg-[#45b3c2] py-5 mt-10'>
+    <div className='bg-[#28c66f] py-5 mt-10'>
         <ul className='align-elements flex justify-around items-center'>
             <li className='flex items-center gap-3'>
                <div className='bg-[#fafeff] p-3 rounded-lg'>
-                <FaPhone className='text-xl text-[#45b3c2]'/>
+                <FaPhone className='text-xl text-[#28c66f]'/>
                </div>
                <div>
                 <h2 className='font-medium text-[#fafeff]'>Telefon:</h2>
@@ -18,7 +18,7 @@ function Footer() {
             </li>
             <li className='flex items-center gap-3'>
                <div className='bg-[#fafeff] p-3 rounded-lg'>
-                <IoMdMailUnread className='text-xl text-[#45b3c2]'/>
+                <IoMdMailUnread className='text-xl text-[#28c66f]'/>
                </div>
                <div>
                 <h2 className='font-medium text-[#fafeff]'>Email:</h2>
@@ -27,7 +27,7 @@ function Footer() {
             </li>
             <li className='flex items-center gap-3'>
             <div className='bg-[#fafeff] p-3 rounded-lg'>
-            <IoLocation className='text-xl text-[#45b3c2]'/>
+            <IoLocation className='text-xl text-[#28c66f]'/>
             </div>
                <div>
                 <h2 className='font-medium text-[#fafeff]'>Manzil:</h2>

@@ -1,6 +1,8 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom"
 import MainLayout from "./layouts/MainLayout"
-import { Home, Nashr, NashrLayout } from "./pages"
+import { Nashr, NashrLayout } from "./pages/Nashr"
+import Home from "./pages/Home"
+import { JurnalHaqida, TahririyatJamoasi } from "./pages/Jurnal"
 
 function App() {
   const routes = createBrowserRouter([
@@ -22,6 +24,14 @@ function App() {
             }
 
           ]
+        },
+        {
+          path: "jurnal-haqida",
+          element: <JurnalHaqida/>
+        },
+        {
+          path: "tahririyat-jamoasi",
+          element: <TahririyatJamoasi/>
         }
       ]
     }
