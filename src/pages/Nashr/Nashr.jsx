@@ -1,8 +1,11 @@
 import React from "react";
 import obloshka from "../../assets/abloshka.png"
 import { Link } from "react-router-dom";
+import useGetFetch from "../../hooks/useGetFetch";
 
 function Nashr() {
+  const { data: nashr, isPending, error } = useGetFetch(`http://192.168.101.175:3000/api/nashrlar/`)
+    console.log(nashr);
   return (
     <div className="grid grid-cols-4 gap-5 ">
       <Link className="rounded-lg bg-[#dcefe4] shadow-xl h-min group">
