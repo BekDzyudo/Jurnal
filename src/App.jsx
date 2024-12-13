@@ -3,6 +3,8 @@ import MainLayout from "./layouts/MainLayout"
 import { Nashr, NashrLayout } from "./pages/Nashr"
 import Home from "./pages/Home"
 import { JurnalHaqida, TahririyatJamoasi } from "./pages/Jurnal"
+import Talabnoma from "./pages/Talabnoma"
+import { YangilikDetails, Yangiliklar } from "./pages/Yangiliklar"
 
 function App() {
   const routes = createBrowserRouter([
@@ -32,7 +34,21 @@ function App() {
         {
           path: "tahririyat-jamoasi",
           element: <TahririyatJamoasi/>
-        }
+        },
+        {
+          path: "talabnoma",
+          element: <Talabnoma/>
+        },
+        {
+          path: "yangiliklar",
+          element: <Yangiliklar/>,
+          children: [
+            {
+              path: ":id",
+              element: <YangilikDetails/>
+            }
+          ]
+        },
       ]
     }
   ])

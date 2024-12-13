@@ -6,7 +6,7 @@ function Header() {
   return (
     <div className={`bg-[#28c66f] py-5 mb-10`}>
       <div className="align-elements flex justify-between items-center">
-        <Link to="/" className="font-semibold text-xl text-[#fafeff]">
+        <Link to="/" className="font-semibold text-2xl text-[#fafeff]">
           ILM VA TADQIQOT JURNALI
         </Link>
         <nav className="flex items-center">
@@ -37,10 +37,10 @@ function Header() {
               </Link>
             </li>
             <li>
-              <Link className="text-lg text-[#fafeff]">Talabnoma</Link>
+              <Link to="/talabnoma" className="text-lg text-[#fafeff]">Talabnoma</Link>
             </li>
             <li>
-              <Link className="text-lg text-[#fafeff]">Yangiliklar</Link>
+              <Link to="/yangiliklar" className="text-lg text-[#fafeff]">Yangiliklar</Link>
             </li>
             <li>
               <Link className="text-lg text-[#fafeff]">Bog'lanish</Link>

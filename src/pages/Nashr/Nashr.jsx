@@ -15,7 +15,7 @@ function Nashr() {
         <div className="p-3 flex flex-col gap-3">
           <h2 className="text-center text-base font-semibold">Ilmiy tadqiqot va innovatsion faoliyatni tashkil etish va moliyalashtirish modellari</h2>
           <div className="card-actions justify-center">
-            <button className="btn btn-sm bg-[#28c66f] hover:bg-[#1bd66c] text-white border-none w-[50%] text-base">Kirish</button>
+            <button className="btn btn-sm bg-[#28c66f] hover:bg-[#1bd66c] text-white border-none w-[50%] text-base">Ko'rish</button>
           </div>
           <div className="flex justify-between">
             <span className="text-[green] font-medium">2024-yil 1-soni</span>
@@ -33,7 +33,7 @@ function Nashr() {
         <div className="p-3 flex flex-col gap-3">
           <h2 className="text-center text-base font-semibold">Ilmiy tadqiqot va innovatsion faoliyatni tashkil etish va moliyalashtirish modellari</h2>
           <div className="card-actions justify-center">
-            <button className="btn btn-sm bg-[#28c66f] hover:bg-[#1bd66c] text-white border-none w-[50%] text-base">Kirish</button>
+            <button className="btn btn-sm bg-[#28c66f] hover:bg-[#1bd66c] text-white border-none w-[50%] text-base">Ko'rish</button>
           </div>
           <div className="flex justify-between">
             <span className="text-[green] font-medium">2024-yil 1-soni</span>
@@ -51,7 +51,7 @@ function Nashr() {
         <div className="p-3 flex flex-col gap-3">
           <h2 className="text-center text-base font-semibold">Ilmiy tadqiqot va innovatsion faoliyatni tashkil etish va moliyalashtirish modellari</h2>
           <div className="card-actions justify-center">
-            <button className="btn btn-sm bg-[#28c66f] hover:bg-[#1bd66c] text-white border-none w-[50%] text-base">Kirish</button>
+            <button className="btn btn-sm bg-[#28c66f] hover:bg-[#1bd66c] text-white border-none w-[50%] text-base">Ko'rish</button>
           </div>
           <div className="flex justify-between">
             <span className="text-[green] font-medium">2024-yil 1-soni</span>
@@ -69,7 +69,7 @@ function Nashr() {
         <div className="p-3 flex flex-col gap-3">
           <h2 className="text-center text-base font-semibold">Ilmiy tadqiqot va innovatsion faoliyatni tashkil etish va moliyalashtirish modellari</h2>
           <div className="card-actions justify-center">
-            <button className="btn btn-sm bg-[#28c66f] hover:bg-[#1bd66c] text-white border-none w-[50%] text-base">Kirish</button>
+            <button className="btn btn-sm bg-[#28c66f] hover:bg-[#1bd66c] text-white border-none w-[50%] text-base">Ko'rish</button>
           </div>
           <div className="flex justify-between">
             <span className="text-[green] font-medium">2024-yil 1-soni</span>
@@ -87,7 +87,7 @@ function Nashr() {
         <div className="p-3 flex flex-col gap-3">
           <h2 className="text-center text-base font-semibold">Ilmiy tadqiqot va innovatsion faoliyatni tashkil etish va moliyalashtirish modellari</h2>
           <div className="card-actions justify-center">
-            <button className="btn btn-sm bg-[#28c66f] hover:bg-[#1bd66c] text-white border-none w-[50%] text-base">Kirish</button>
+            <button className="btn btn-sm bg-[#28c66f] hover:bg-[#1bd66c] text-white border-none w-[50%] text-base">Ko'rish</button>
           </div>
           <div className="flex justify-between">
             <span className="text-[green] font-medium">2024-yil 1-soni</span>
@@ -105,7 +105,7 @@ function Nashr() {
         <div className="p-3 flex flex-col gap-3">
           <h2 className="text-center text-base font-semibold">Ilmiy tadqiqot va innovatsion faoliyatni tashkil etish va moliyalashtirish modellari</h2>
           <div className="card-actions justify-center">
-            <button className="btn btn-sm bg-[#28c66f] hover:bg-[#1bd66c] text-white border-none w-[50%] text-base">Kirish</button>
+            <button className="btn btn-sm bg-[#28c66f] hover:bg-[#1bd66c] text-white border-none w-[50%] text-base">Ko'rish</button>
           </div>
           <div className="flex justify-between">
             <span className="text-[green] font-medium">2024-yil 1-soni</span>

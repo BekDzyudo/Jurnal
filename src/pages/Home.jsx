@@ -32,7 +32,7 @@ function Home() {
   return (
     <div className="align-elements">
       <section>
-        <h2 className="text-2xl mb-5 font-semibold text-[#28c66f]">Xalqaro bazalarda indekslanishi</h2>
+        <h2 className="text-3xl mb-5 font-semibold text-[#28c66f]">Xalqaro bazalarda indekslanishi</h2>
         <Carousel responsive={responsive} autoPlay={true} autoPlaySpeed={3000} infinite={true} transitionDuration={500} className="pb-24">
           <div className="borderCard h-min mr-5 group border shadow-2xl rounded-lg">
               <figure className="h-[50%] p-5 pb-0">
@@ -81,9 +81,9 @@ function Home() {
         </Carousel>
       </section>
       <section className="mb-24">
-        <h2 className="text-2xl mb-5 font-semibold text-[#28c66f]">Yangiliklar</h2>
+        <h2 className="text-3xl mb-5 font-semibold text-[#28c66f]">Yangiliklar</h2>
         <div className="grid grid-cols-4 gap-5 ">
-          <Link className="rounded-lg bg-slate-200 shadow-xl h-min group">
+          <Link className="rounded-lg bg-[#dcefe4] shadow-xl h-min group">
             <figure className="h-[60%] p-5 pb-0">
               <img
                 src={news}
@@ -92,7 +92,6 @@ function Home() {
             </figure>
             <div className="p-3 flex flex-col gap-3">
               <h2 className="text-center text-base font-semibold">“Ta’lim, fan va innovatsiya” jurnalining 2024-yil 1-soni uchun qabul boshlandi.</h2>
-              <p className="text-sm text-justify">Qadrli obunachilar! Sizlarga shuni ma’lum qilamizki, “Ta’lim, fan va innovatsiya” jurnalining 2024-yil 1-soni uchun qabul boshlandi. Muddat 5-fevraliga qadar (shu kuni ham)</p>
               <div className="card-actions justify-center">
                 <button className="btn btn-sm bg-[#28c66f] hover:bg-[#1bd66c] text-white border-none w-[50%] text-base">Batafsil</button>
               </div>
@@ -102,7 +101,7 @@ function Home() {
               </div>
             </div>
           </Link>
-          <Link className="rounded-lg bg-slate-200 shadow-xl h-min group">
+          <Link className="rounded-lg bg-[#dcefe4] shadow-xl h-min group">
             <figure className="h-[60%] p-5 pb-0">
               <img
                 src={news2}
@@ -111,7 +110,6 @@ function Home() {
             </figure>
             <div className="p-3 flex flex-col gap-3">
               <h2 className="text-center text-base font-semibold">“Ta’lim, fan va innovatsiya” jurnalining 2024-yil 1-soni uchun qabul boshlandi.</h2>
-              <p className="text-sm text-justify">Qadrli obunachilar! Sizlarga shuni ma’lum qilamizki, “Ta’lim, fan va innovatsiya” jurnalining 2024-yil 1-soni uchun qabul boshlandi. Muddat 5-fevraliga qadar (shu kuni ham)</p>
               <div className="card-actions justify-center">
                 <button className="btn btn-sm bg-[#28c66f] hover:bg-[#1bd66c] text-white border-none w-[50%] text-base">Batafsil</button>
               </div>
@@ -121,7 +119,7 @@ function Home() {
               </div>
             </div>
           </Link>
-          <Link className="rounded-lg bg-slate-200 shadow-xl h-min group">
+          <Link className="rounded-lg bg-[#dcefe4] shadow-xl h-min group">
             <figure className="h-[60%] p-5 pb-0">
               <img
                 src={news}
@@ -130,7 +128,6 @@ function Home() {
             </figure>
             <div className="p-3 flex flex-col gap-3">
               <h2 className="text-center text-base font-semibold">“Ta’lim, fan va innovatsiya” jurnalining 2024-yil 1-soni uchun qabul boshlandi.</h2>
-              <p className="text-sm text-justify">Qadrli obunachilar! Sizlarga shuni ma’lum qilamizki, “Ta’lim, fan va innovatsiya” jurnalining 2024-yil 1-soni uchun qabul boshlandi. Muddat 5-fevraliga qadar (shu kuni ham)</p>
               <div className="card-actions justify-center">
                 <button className="btn btn-sm bg-[#28c66f] hover:bg-[#1bd66c] text-white border-none w-[50%] text-base">Batafsil</button>
               </div>
@@ -140,7 +137,7 @@ function Home() {
               </div>
             </div>
           </Link>
-          <Link className="rounded-lg bg-slate-200 shadow-xl h-min group">
+          <Link className="rounded-lg bg-[#dcefe4] shadow-xl h-min group">
             <figure className="h-[60%] p-5 pb-0">
               <img
                 src={news3}
@@ -149,7 +146,6 @@ function Home() {
             </figure>
             <div className="p-3 flex flex-col gap-3">
               <h2 className="text-center text-base font-semibold">“Ta’lim, fan va innovatsiya” jurnalining 2024-yil 1-soni uchun qabul boshlandi.</h2>
-              <p className="text-sm text-justify">Qadrli obunachilar! Sizlarga shuni ma’lum qilamizki, “Ta’lim, fan va innovatsiya” jurnalining 2024-yil 1-soni uchun qabul boshlandi. Muddat 5-fevraliga qadar (shu kuni ham)</p>
               <div className="card-actions justify-center">
                 <button className="btn btn-sm bg-[#28c66f] hover:bg-[#1bd66c] text-white border-none w-[50%] text-base">Batafsil</button>
               </div>
