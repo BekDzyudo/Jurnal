@@ -21,7 +21,7 @@ function App() {
           element: <NashrLayout/>,
           children : [
             {
-              index: true,
+              path: ":id",
               element: <Nashr/>
             }
 

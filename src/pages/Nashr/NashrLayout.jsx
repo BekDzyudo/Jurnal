@@ -17,7 +17,7 @@ function NashrLayout() {
           <ul className="w-[20%] flex flex-col gap-3">
             <li>
               <NavLink
-                to="/nashrlar"
+                to={`/nashrlar/`}
                 end
                 className={({ isActive }) =>
                   `btn outline hover:bg-[#28c66f] hover:text-white outline-1 outline-[#28c66f] text-base w-full ${
@@ -34,7 +34,7 @@ function NashrLayout() {
               return (
                 <li key={item.id}>
                   <NavLink
-                    to="/nashrla"
+                    to={`/nashrlar/${item.year}`}
                     className={({ isActive }) =>
                       `btn outline hover:bg-[#28c66f] hover:text-white outline-1 outline-[#28c66f] text-base w-full ${
                         isActive

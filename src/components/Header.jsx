@@ -6,25 +6,25 @@ function Header() {
   return (
     <div className={`bg-[#28c66f] py-5 mb-10`}>
       <div className="align-elements flex justify-between items-center">
-        <Link to="/" className="font-semibold text-2xl text-[#fafeff]">
+        <Link to="/" className="font-semibold text-2xl text-[#fafeff] lg:text-xl">
           ILM VA TADQIQOT JURNALI
         </Link>
         <nav className="flex items-center">
-          <ul className="menu menu-horizontal rounded-box">
+          <ul className="menu lg:menu-sm menu-horizontal rounded-box">
             <li>
-              <Link to="/" className="text-lg text-[#fafeff]">Bosh sahifa</Link>
+              <Link to="/" className="lg:text-base xl:text-lg text-[#fafeff]">Bosh sahifa</Link>
             </li>
             <li>
               <details>
-                <summary className="text-lg text-[#fafeff]">Jurnal</summary>
+                <summary className="lg:text-base xl:text-lg text-[#fafeff]">Jurnal</summary>
                 <ul className="p-1 bg-[#28c66f] w-48">
                   <li>
-                    <Link to="/jurnal-haqida" className="text-lg text-[#fafeff]">
+                    <Link to="/jurnal-haqida" className="lg:text-base xl:text-lg text-[#fafeff]">
                       Jurnal haqida
                     </Link>
                   </li>
                   <li>
-                    <Link to="/tahririyat-jamoasi" className="text-lg text-[#fafeff]">
+                    <Link to="/tahririyat-jamoasi" className="lg:text-base xl:text-lg text-[#fafeff]">
                       Tahririyat jamoasi
                     </Link>
                   </li>
@@ -32,33 +32,31 @@ function Header() {
               </details>
             </li>
             <li>
-              <Link className="text-lg text-[#fafeff]" to="/nashrlar">
+              <Link className="lg:text-base xl:text-lg text-[#fafeff]" to="/nashrlar">
                 Nashrlar
               </Link>
             </li>
             <li>
-              <Link to="/talabnoma" className="text-lg text-[#fafeff]">Talabnoma</Link>
+              <Link to="/talabnoma" className="lg:text-base xl:text-lg text-[#fafeff]">Talabnoma</Link>
             </li>
             <li>
-              <Link to="/yangiliklar" className="text-lg text-[#fafeff]">Yangiliklar</Link>
+              <Link to="/yangiliklar" className="lg:text-base xl:text-lg text-[#fafeff]">Yangiliklar</Link>
             </li>
             <li>
-              <Link className="text-lg text-[#fafeff]">Bog'lanish</Link>
+              <Link className="lg:text-base xl:text-lg text-[#fafeff]">Bog'lanish</Link>
             </li>
           </ul>
-          <form action="">
-            <select className="menu outline-none rounded bg-[#28c66f] text-white text-lg">
-              <option className="bg-none text-lg" value="uzbek">
+            <select className="menu outline-none rounded bg-[#28c66f] text-white lg:text-base xl:text-lg">
+              <option className="bg-none lg:text-base xl:text-lg" value="uzbek">
                 O‘zbekcha
               </option>
-              <option className="bg-none text-lg" value="rus">
+              <option className="bg-none lg:text-base xl:text-lg" value="rus">
                 Русский
               </option>
-              <option className="bg-none text-lg" value="english">
+              <option className="bg-none lg:text-base xl:text-lg" value="english">
                 English
               </option>
             </select>
-          </form>
         </nav>
       </div>
     </div>
