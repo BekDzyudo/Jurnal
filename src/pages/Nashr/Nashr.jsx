@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import useGetFetch from "../../hooks/useGetFetch";
 
 function Nashr() {
-  const { data: nashr, isPending, error } = useGetFetch(`http://192.168.101.175:3000/api/nashrlar/`)
+  const { data: nashr, isPending, error } = useGetFetch(`${import.meta.env.VITE_BASE_URL}/nashrlar/`)
     console.log(nashr);
   return (
     <div className="grid grid-cols-4 gap-5 ">

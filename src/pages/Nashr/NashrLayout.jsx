@@ -7,7 +7,7 @@ function NashrLayout() {
     data: years,
     isPending,
     error,
-  } = useGetFetch(`http://192.168.101.175:3000/api/years/`);
+  } = useGetFetch(`${import.meta.env.VITE_BASE_URL}/years/`); 
   return (
     <>
       {isPending && <div className="flex justify-center items-center h-screen"><span className="loading loading-spinner loading-lg"></span></div>}
