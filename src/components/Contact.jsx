@@ -7,7 +7,7 @@ import { FaPhoneSquareAlt } from "react-icons/fa";
 
 function Contact() {
   return (
-    <section className='bg-[#dcefe4] mb-24'>
+    <section id='contact' className='bg-[#dcefe4] mb-24'>
         <div className='align-elements py-24 flex justify-end items-center'>
             <div className='w-[80%] flex flex-col items-center'>
                 <h2 className='text-5xl mb-10 font-semibold text-[#28c66f]'>Biz bilan aloqa</h2>

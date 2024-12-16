@@ -167,7 +167,7 @@ function Home() {
           </div>
         )}
       </section>
-      <Contact />
+      <Contact/>
       <section className="align-elements">
         <Carousel responsive={responsive}>
           <div className="group flex flex-col items-center gap-4 border border-[green] hover:bg-[#28c66f] transition duration-300 hover:text-white rounded-md mr-5 p-5 text-base text-center">
