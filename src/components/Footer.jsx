@@ -4,8 +4,10 @@ import { IoMdMailUnread } from "react-icons/io";
 import { IoLocation } from "react-icons/io5";
 import { FaTelegramPlane } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
+import { useTranslation } from 'react-i18next';
 
 function Footer() {
+   const {t} = useTranslation()
   return (
     <div className='bg-[#28c66f] py-5 mt-10'>
         <ul className='align-elements flex justify-around items-center'>
@@ -32,7 +34,7 @@ function Footer() {
             <IoLocation className='text-xl text-[#28c66f]'/>
             </div>
                <div>
-                <h2 className='font-medium text-[#fafeff]'>Manzil:</h2>
+                <h2 className='font-medium text-[#fafeff]'>{t('footer.manzil')}:</h2>
                 <p className='text-[#fafeff]'>Toshkent sh, Shifonur k, 75 uy</p>
                </div>
             </li>

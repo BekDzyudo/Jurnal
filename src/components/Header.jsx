@@ -3,7 +3,15 @@ import { Link } from "react-router-dom";
 import { FaAngleDown } from "react-icons/fa";
 import { FaAngleUp } from "react-icons/fa";
 import { HashLink } from "react-router-hash-link";
+import { useTranslation } from "react-i18next";
+import i18n from "../locales/i18n/i18n.jsx"
+
 function Header() {
+  const {t} = useTranslation()
+  function changeLanguage(e){
+    i18n.changeLanguage(e.target.value);
+    
+  }
   return (
     <div className={`bg-[#28c66f] py-5`}>
       <div className="align-elements flex justify-between items-center">
@@ -11,19 +19,18 @@ function Header() {
           to="/"
           className="font-semibold text-2xl text-[#fafeff] lg:text-xl"
         >
-          ILM VA TADQIQOT JURNALI
+          {t('navbar.logo')}
         </Link>
         <nav className="flex items-center">
           <ul className="menu lg:menu-sm menu-horizontal rounded-box">
             <li>
               <Link to="/" className="lg:text-base xl:text-lg text-[#fafeff]">
-                Bosh sahifa
+              {t('navbar.home')}
               </Link>
             </li>
             <li className="group">
-              {/* <details> */}
               <summary className="flex items-center justify-center lg:text-base xl:text-lg text-[#fafeff]">
-                <p className="lg:text-base xl:text-lg text-[#fafeff]">Jurnal</p>
+                <p className="lg:text-base xl:text-lg text-[#fafeff]">{t('navbar.journal')}</p>
                 <span className="block group-hover:hidden transition duration-300">
                   <FaAngleDown/>
                 </span>{" "}
@@ -37,7 +44,7 @@ function Header() {
                     to="/jurnal-haqida"
                     className="lg:text-base xl:text-lg text-[#fafeff]"
                   >
-                    Jurnal haqida
+                    {t('navbar.journalAbout')}
                   </Link>
                 </li>
                 <li>
@@ -45,18 +52,17 @@ function Header() {
                     to="/tahririyat-jamoasi"
                     className="lg:text-base xl:text-lg text-[#fafeff]"
                   >
-                    Tahririyat jamoasi
+                    {t('navbar.journalTeam')}
                   </Link>
                 </li>
               </ul>
-              {/* </details> */}
             </li>
             <li>
               <Link
                 className="lg:text-base xl:text-lg text-[#fafeff]"
                 to="/nashrlar"
               >
-                Nashrlar
+                {t('navbar.nashr')}
               </Link>
             </li>
             <li>
@@ -64,7 +70,7 @@ function Header() {
                 to="/talabnoma"
                 className="lg:text-base xl:text-lg text-[#fafeff]"
               >
-                Talabnoma
+                {t('navbar.talabnoma')}
               </Link>
             </li>
             <li>
@@ -72,28 +78,27 @@ function Header() {
                 to="/yangiliklar"
                 className="lg:text-base xl:text-lg text-[#fafeff]"
               >
-                Yangiliklar
+                {t('navbar.news')}
               </Link>
             </li>
             <li>
-              {/* <Link to="/#contact" className="lg:text-base xl:text-lg text-[#fafeff]">Bog'lanish</Link> */}
               <HashLink
                 smooth
                 to="/#contact"
                 className="lg:text-base xl:text-lg text-[#fafeff]"
               >
-                Bog'lanish
+                {t('navbar.contact')}
               </HashLink>
             </li>
           </ul>
-          <select className="menu outline-none rounded bg-[#28c66f] text-white lg:text-base xl:text-lg">
-            <option className="bg-none lg:text-base xl:text-lg" value="uzbek">
+          <select onChange={changeLanguage} className="menu outline-none rounded bg-[#28c66f] text-white lg:text-base xl:text-lg">
+            <option className="bg-none lg:text-base xl:text-lg" value="uz">
               O‘zbekcha
             </option>
-            <option className="bg-none lg:text-base xl:text-lg" value="rus">
+            <option className="bg-none lg:text-base xl:text-lg" value="ru">
               Русский
             </option>
-            <option className="bg-none lg:text-base xl:text-lg" value="english">
+            <option className="bg-none lg:text-base xl:text-lg" value="en">
               English
             </option>
           </select>
