@@ -19,7 +19,7 @@ function Yangiliklar() {
         </p>
       )}
       {data && (
-        <div className="align-elements">
+        <div className="align-elements mt-10">
           <h2 className="text-3xl mb-5 font-semibold text-[#28c66f]">
             Yangiliklar
           </h2>

@@ -19,12 +19,12 @@ function TahririyatJamoasi() {
         </p>
       )}
       {data && (
-        <div className="align-elements">
+        <div className="align-elements mt-10">
           <h1 className="text-3xl mb-5 font-semibold text-[#28c66f]">
             Tahririyat jamoasi
           </h1>
           <div className="row w-full grid grid-cols-2 gap-5 mb-20">
-            {data?.tahririyat_jamoasi.map((item) => {
+            {data?.tahririyat_jamoasi?.map((item) => {
               return (
                 <div key={item.id} className="w-full flex gap-5 rounded-lg p-3 bg-[#dcefe4]">
                   <div className="w-[30%]">

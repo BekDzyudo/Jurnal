@@ -2,7 +2,7 @@ import React from "react";
 
 function JurnalHaqida() {
   return (
-    <div className="align-elements">
+    <div className="align-elements mt-10">
       <h1 className="text-3xl mb-5 font-semibold text-[#28c66f]">Jurnal haqida</h1>
       <p className="text-[green] text-lg text-justify">
         O‘zbekiston Respublikasi Oliy ta’lim, fan va innovatsiyalar vazirligi,

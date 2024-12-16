@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 // 45b3c2
 function Header() {
   return (
-    <div className={`bg-[#28c66f] py-5 mb-10`}>
+    <div className={`bg-[#28c66f] py-5`}>
       <div className="align-elements flex justify-between items-center">
         <Link to="/" className="font-semibold text-2xl text-[#fafeff] lg:text-xl">
           ILM VA TADQIQOT JURNALI
@@ -17,7 +17,7 @@ function Header() {
             <li>
               <details>
                 <summary className="lg:text-base xl:text-lg text-[#fafeff]">Jurnal</summary>
-                <ul className="p-1 bg-[#28c66f] w-48">
+                <ul className="p-1 bg-[#28c66f] z-50 w-48">
                   <li>
                     <Link to="/jurnal-haqida" className="lg:text-base xl:text-lg text-[#fafeff]">
                       Jurnal haqida

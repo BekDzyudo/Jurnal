@@ -2,7 +2,7 @@ import React from "react";
 
 function Talabnoma() {
   return (
-    <div className="align-elements">
+    <div className="align-elements mt-10">
       <h1 className="text-3xl mb-7 font-semibold text-[#28c66f]">Talabnoma</h1>
       <div className="flex flex-col gap-5">
         <div className="collapse collapse-arrow bg-[#dcefe4] rounded-lg">

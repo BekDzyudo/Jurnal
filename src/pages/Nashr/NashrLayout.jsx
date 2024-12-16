@@ -12,7 +12,7 @@ function NashrLayout() {
     <>
       {error && <p></p>}
       {years && (
-        <div className="align-elements flex gap-5">
+        <div className="align-elements flex gap-5 mt-10">
           <ul className="w-[20%] flex flex-col gap-3">
             <li>
               <NavLink
