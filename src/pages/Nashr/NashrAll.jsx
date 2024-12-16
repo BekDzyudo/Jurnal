@@ -1,25 +1,20 @@
 import React, { useState } from "react";
-import obloshka from "../../assets/abloshka.png";
 import { Link, useParams } from "react-router-dom";
 import useGetFetch from "../../hooks/useGetFetch";
 
-function Nashr() {
-  // const [year, SetYear] = useState("")
-  const { id } = useParams();
-  console.log(id);
-  
+function NashrAll() {
   const {
     data: nashr,
     isPending,
     error,
   } = useGetFetch(
-    `${import.meta.env.VITE_BASE_URL}/nashrlar/?year_nashr__year=${id}`
+    `${import.meta.env.VITE_BASE_URL}/nashrlar/?year_nashr__year=barchasi`
   );
-  console.log(nashr);
+
   return (
     <>
       {isPending && (
-        <div className="flex justify-center items-center h-screen">
+        <div className="flex justify-center items-center h-[600px]">
           <span className="loading loading-spinner loading-lg"></span>
         </div>
       )}
@@ -81,4 +76,4 @@ function Nashr() {
   );
 }
 
-export default Nashr;
+export default NashrAll;

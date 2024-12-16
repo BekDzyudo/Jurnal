@@ -9,7 +9,7 @@ function Yangiliklar() {
   return (
     <>
       {isPending && (
-        <div className="flex justify-center items-center h-screen">
+        <div className="flex justify-center items-center h-[600px]">
           <span className="loading loading-spinner loading-lg"></span>
         </div>
       )}
@@ -28,7 +28,7 @@ function Yangiliklar() {
               return (
                 <Link
                   key={item.id}
-                  to=""
+                  to={`/yangiliklar/${item.id}`}
                   className="rounded-lg bg-[#dcefe4] shadow-xl h-min group"
                 >
                   <figure className="h-60 p-5 pb-0">

@@ -1,6 +1,6 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom"
 import MainLayout from "./layouts/MainLayout"
-import { Nashr, NashrLayout } from "./pages/Nashr"
+import { NashrDetail, NashrAll, NashrLayout } from "./pages/Nashr"
 import Home from "./pages/Home"
 import { JurnalHaqida, TahririyatJamoasi } from "./pages/Jurnal"
 import Talabnoma from "./pages/Talabnoma"
@@ -21,8 +21,12 @@ function App() {
           element: <NashrLayout/>,
           children : [
             {
+              index:true,
+              element: <NashrAll/>
+            },
+            {
               path: ":id",
-              element: <Nashr/>
+              element: <NashrDetail/>
             }
 
           ]
@@ -41,14 +45,12 @@ function App() {
         },
         {
           path: "yangiliklar",
-          element: <Yangiliklar/>,
-          children: [
-            {
-              path: ":id",
-              element: <YangilikDetails/>
-            }
-          ]
+          element: <Yangiliklar/>
         },
+        {
+          path: "yangiliklar/:id",
+          element: <YangilikDetails/>
+        }
       ]
     }
   ])
