@@ -1,8 +1,10 @@
 import React from "react";
 import { NavLink, Outlet } from "react-router-dom";
 import useGetFetch from "../../hooks/useGetFetch";
+import { useTranslation } from "react-i18next";
 
 function NashrLayout() {
+  const {t} = useTranslation()
   const {
     data: years,
     isPending,
@@ -26,7 +28,7 @@ function NashrLayout() {
                   }`
                 }
               >
-                Barcha sonlari
+               {t('nashrlar_page.all_sonlari')}
               </NavLink>
             </li>
             {years?.map((item) => {
@@ -42,7 +44,7 @@ function NashrLayout() {
                       }`
                     }
                   >
-                    {item.year}-yil sonlari
+                    {item.year}- {t('nashrlar_page.sonlari')}
                   </NavLink>
                 </li>
               );

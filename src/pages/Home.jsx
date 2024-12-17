@@ -8,8 +8,10 @@ import banner from "../assets/bannerYashil.png";
 import { Link } from "react-router-dom";
 import useGetFetch from "../hooks/useGetFetch";
 import { Contact } from "../components";
+import { useTranslation } from "react-i18next";
 
 function Home() {
+  const {t} = useTranslation()
   const responsive = {
     superLargeDesktop: {
       breakpoint: { max: 4000, min: 3000 },
@@ -38,14 +40,14 @@ function Home() {
   return (
     <div>
       <section style={{zIndex: -1}} className="align-elements pt-2">
-        <marquee direction="right" behavior="alternate" className="tracking-widest text-[green]">ILM VA TADQIQOT JURNALI SAYTIGA XUSH KELIBSIZ</marquee>
+        <marquee direction="right" behavior="alternate" className="tracking-widest text-[green]">{t('home_page.welcome')}</marquee>
       </section>
       <section className="h-[500px] w-full mb-24 ml-[-2px]">
         <img src={banner} alt="" className="h-full w-full" />
       </section>
       <section className="align-elements">
         <h2 className="text-4xl mb-5 font-semibold text-[#28c66f]">
-          Xalqaro bazalarda indekslanishi
+        {t('home_page.indexTitle')}
         </h2>
         <Carousel
           responsive={responsive}
@@ -119,7 +121,7 @@ function Home() {
       </section>
       <section className="mb-24 align-elements">
         <h2 className="text-4xl mb-5 font-semibold text-[#28c66f]">
-          Yangiliklar
+        {t('home_page.newsTitle')}
         </h2>
         {yangiliklar && (
           <div className="grid grid-cols-4 gap-5 ">
@@ -142,7 +144,7 @@ function Home() {
                     </h2>
                     <div className="card-actions justify-center">
                       <button className="btn btn-sm bg-[#28c66f] hover:bg-[#1bd66c] text-white border-none w-[50%] text-base">
-                        Batafsil
+                      {t('news_page.batafsil')}
                       </button>
                     </div>
                     <div className="flex justify-end">

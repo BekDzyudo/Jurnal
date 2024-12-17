@@ -13,6 +13,7 @@ i18n.use(initReactI18next).init({
     resources: {
         uz: uz,
         en: en,
+        ru: ru,
     }
 });
 export default i18n;

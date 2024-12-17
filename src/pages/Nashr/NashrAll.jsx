@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import useGetFetch from "../../hooks/useGetFetch";
+import { useTranslation } from "react-i18next";
 
 function NashrAll() {
+  const {t} = useTranslation()
   const {
     data: nashr,
     isPending,
@@ -45,7 +47,7 @@ function NashrAll() {
                   </h2>
                   <div className="card-actions justify-center">
                     <button className="btn btn-sm bg-[#28c66f] hover:bg-[#1bd66c] text-white border-none w-[50%] text-base">
-                      Ko'rish
+                    {t('nashrlar_page.korish')}
                     </button>
                   </div>
                   <div className="flex justify-between">

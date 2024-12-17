@@ -1,11 +1,14 @@
 import React from "react";
 import person from "../../assets/person.png";
 import useGetFetch from "../../hooks/useGetFetch";
+import { useTranslation } from "react-i18next";
 
 function TahririyatJamoasi() {
+  const {t} = useTranslation()
   const { data, isPending, error } = useGetFetch(
     `${import.meta.env.VITE_BASE_URL}/type-tahririyat/`
   );
+
   return (
     <>
       {isPending && (
@@ -21,7 +24,7 @@ function TahririyatJamoasi() {
       {data && (
         <div className="align-elements mt-10">
           <h1 className="text-3xl mb-5 font-semibold text-[#28c66f]">
-            Tahririyat jamoasi
+          {t('journal_page.journalTeamTitle1')}
           </h1>
           <div className="row w-full grid grid-cols-2 gap-5 mb-20">
             {data?.tahririyat_jamoasi?.map((item) => {
@@ -43,7 +46,7 @@ function TahririyatJamoasi() {
                       </p>
                     </div>
                     <div className="child">
-                      <span className="text-xl font-medium">Lavozimi:</span>
+                      <span className="text-xl font-medium">{t('journal_page.lavozim')}:</span>
                       <p className="text-base">
                         {item.lavozim}
                       </p>
@@ -56,7 +59,7 @@ function TahririyatJamoasi() {
           <div className="row w-full grid grid-cols-3 gap-14">
             <div className="bg-[#dcefe4] rounded-lg h-min">
               <h2 className="bg-[#28c66f] p-4 text-2xl text-center text-white font-semibold shadow-md rounded-t-lg">
-                Tahrir hayʼati aʼzolari:
+              {t('journal_page.journalTeamTitle2')}:
               </h2>
               <ul className="px-5">
                 {
@@ -72,7 +75,7 @@ function TahririyatJamoasi() {
             </div>
             <div className="bg-[#dcefe4] rounded-lg h-min">
               <h2 className="bg-[#28c66f] p-4 text-2xl text-center text-white font-semibold shadow-md rounded-t-lg">
-                Jamoatchilik kengashi aʼzolari:
+              {t('journal_page.journalTeamTitle3')}:
               </h2>
               <ul className="px-5">
                 {
@@ -88,7 +91,7 @@ function TahririyatJamoasi() {
             </div>
             <div className="bg-[#dcefe4] rounded-lg h-min">
               <h2 className="bg-[#28c66f] p-4 text-2xl text-center text-white font-semibold shadow-md rounded-t-lg">
-                Dizayner:
+              {t('journal_page.journalTeamTitle4')}:
               </h2>
               <ul className="px-5">
                 {

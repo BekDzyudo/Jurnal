@@ -1,8 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import useGetFetch from "../../hooks/useGetFetch";
+import { useTranslation } from "react-i18next";
 
 function Yangiliklar() {
+  const {t} = useTranslation()
   const { data, isPending, error } = useGetFetch(
     `${import.meta.env.VITE_BASE_URL}/yangiliklar/`
   );
@@ -21,7 +23,7 @@ function Yangiliklar() {
       {data && (
         <div className="align-elements mt-10">
           <h2 className="text-3xl mb-5 font-semibold text-[#28c66f]">
-            Yangiliklar
+          {t('news_page.newsTitle')}
           </h2>
           <div className="grid grid-cols-4 gap-5">
             {data.map((item) => {
@@ -43,7 +45,7 @@ function Yangiliklar() {
                     </h2>
                     <div className="card-actions justify-center">
                       <button className="btn btn-sm bg-[#28c66f] hover:bg-[#1bd66c] text-white border-none w-[50%] text-base">
-                        Batafsil
+                      {t('news_page.batafsil')}
                       </button>
                     </div>
                     <div className="flex justify-end">
