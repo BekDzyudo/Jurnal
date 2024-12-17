@@ -22,11 +22,11 @@ function TahririyatJamoasi() {
         </p>
       )}
       {data && (
-        <div className="align-elements mt-10">
-          <h1 className="text-3xl mb-5 font-semibold text-[#28c66f]">
+        <div className="align-elements mt-5 md:mt-10">
+          <h1 className="md:text-3xl text-xl mb-5 font-semibold text-[#28c66f]">
           {t('journal_page.journalTeamTitle1')}
           </h1>
-          <div className="row w-full grid grid-cols-2 gap-5 mb-20">
+          <div className="row w-full grid grid-cols-1 md:grid-cols-2 gap-5 mb-10 md:mb-20">
             {data?.tahririyat_jamoasi?.map((item) => {
               return (
                 <div key={item.id} className="w-full flex gap-5 rounded-lg p-3 bg-[#dcefe4]">
@@ -38,7 +38,7 @@ function TahririyatJamoasi() {
                   </div>
                   <div className="flex flex-col gap-4 w-[70%]">
                     <div className="child">
-                      <span className="text-xl font-medium">
+                      <span className="text-base md:text-xl font-medium">
                         F.I.SH:
                       </span>
                       <p className="text-base">
@@ -46,7 +46,7 @@ function TahririyatJamoasi() {
                       </p>
                     </div>
                     <div className="child">
-                      <span className="text-xl font-medium">{t('journal_page.lavozim')}:</span>
+                      <span className="text-base md:text-xl font-medium">{t('journal_page.lavozim')}:</span>
                       <p className="text-base">
                         {item.lavozim}
                       </p>
@@ -56,9 +56,9 @@ function TahririyatJamoasi() {
               );
             })}
           </div>
-          <div className="row w-full grid grid-cols-3 gap-14">
+          <div className="row w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 md:gap-14">
             <div className="bg-[#dcefe4] rounded-lg h-min">
-              <h2 className="bg-[#28c66f] p-4 text-2xl text-center text-white font-semibold shadow-md rounded-t-lg">
+              <h2 className="bg-[#28c66f] p-4 text-xl md:text-2xl text-center text-white font-semibold shadow-md rounded-t-lg">
               {t('journal_page.journalTeamTitle2')}:
               </h2>
               <ul className="px-5">
@@ -74,7 +74,7 @@ function TahririyatJamoasi() {
               </ul>
             </div>
             <div className="bg-[#dcefe4] rounded-lg h-min">
-              <h2 className="bg-[#28c66f] p-4 text-2xl text-center text-white font-semibold shadow-md rounded-t-lg">
+              <h2 className="bg-[#28c66f] p-4 text-xl md:text-2xl text-center text-white font-semibold shadow-md rounded-t-lg">
               {t('journal_page.journalTeamTitle3')}:
               </h2>
               <ul className="px-5">
@@ -90,7 +90,7 @@ function TahririyatJamoasi() {
               </ul>
             </div>
             <div className="bg-[#dcefe4] rounded-lg h-min">
-              <h2 className="bg-[#28c66f] p-4 text-2xl text-center text-white font-semibold shadow-md rounded-t-lg">
+              <h2 className="bg-[#28c66f] p-4 text-xl md:text-2xl text-center text-white font-semibold shadow-md rounded-t-lg">
               {t('journal_page.journalTeamTitle4')}:
               </h2>
               <ul className="px-5">
@@ -113,8 +113,3 @@ function TahririyatJamoasi() {
 }
 
 export default TahririyatJamoasi;
-// font-size: 50px;
-// margin-top: 100px;
-// color: white;
-// opacity: 0.5;
-// text-align: center;

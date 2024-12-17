@@ -21,11 +21,11 @@ function Yangiliklar() {
         </p>
       )}
       {data && (
-        <div className="align-elements mt-10">
-          <h2 className="text-3xl mb-5 font-semibold text-[#28c66f]">
+        <div className="align-elements mt-5 md:mt-10">
+          <h2 className="text-xl md:text-2xl xl:text-3xl mb-5 font-semibold text-[#28c66f]">
           {t('news_page.newsTitle')}
           </h2>
-          <div className="grid grid-cols-4 gap-5">
+          <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 md:grid-cols-3 gap-5">
             {data.map((item) => {
               return (
                 <Link

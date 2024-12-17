@@ -40,13 +40,14 @@ function Home() {
   return (
     <div>
       <section style={{zIndex: -1}} className="align-elements pt-2">
-        <marquee direction="right" behavior="alternate" className="tracking-widest text-[green]">{t('home_page.welcome')}</marquee>
+        <p className="text-[green] text-center font-[600px] sm:hidden">{t('home_page.welcome')}</p>
+        <marquee direction="right" behavior="alternate" className="hidden sm:flex md:tracking-widest text-[green]">{t('home_page.welcome')}</marquee>
       </section>
-      <section className="h-[500px] w-full mb-24 ml-[-2px]">
+      <section className="h-[500px] w-full mb-10 md:mb-24 ml-[-2px]">
         <img src={banner} alt="" className="h-full w-full" />
       </section>
       <section className="align-elements">
-        <h2 className="text-4xl mb-5 font-semibold text-[#28c66f]">
+        <h2 className="xl:text-4xl md:text-3xl text-xl mb-5 font-semibold text-[#28c66f]">
         {t('home_page.indexTitle')}
         </h2>
         <Carousel
@@ -55,7 +56,7 @@ function Home() {
           autoPlaySpeed={3000}
           infinite={true}
           transitionDuration={500}
-          className="pb-24"
+          className="md:pb-24 pb-10 mb-5"
         >
           <div className="borderCard h-min mr-5 group border shadow-2xl rounded-lg">
             <figure className="h-[50%] p-5 pb-0">
@@ -119,12 +120,12 @@ function Home() {
           </div>
         </Carousel>
       </section>
-      <section className="mb-24 align-elements">
-        <h2 className="text-4xl mb-5 font-semibold text-[#28c66f]">
+      <section className="mb-10 md:mb-24 align-elements">
+        <h2 className="xl:text-4xl md:text-3xl text-xl mb-5 font-semibold text-[#28c66f]">
         {t('home_page.newsTitle')}
         </h2>
         {yangiliklar && (
-          <div className="grid grid-cols-4 gap-5 ">
+          <div className="grid xl:grid-cols-4 sm:grid-cols-2 lg:grid-cols-3 gap-5 ">
             {yangiliklar.slice(0, 4).map((yangilik) => {
               return (
                 <Link

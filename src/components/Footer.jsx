@@ -10,7 +10,7 @@ function Footer() {
    const {t} = useTranslation()
   return (
     <div className='bg-[#28c66f] py-5 mt-10'>
-        <ul className='align-elements flex justify-around items-center'>
+        <ul className='align-elements flex flex-col items-start gap-5 md:flex-row md:justify-around md:items-center'>
             <li className='flex items-center gap-3'>
                <div className='bg-[#fafeff] p-3 rounded-lg'>
                 <FaTelegramPlane className='text-xl text-[#28c66f]'/>

@@ -37,8 +37,8 @@ function YangilikDetails() {
         </p>
       )}
       {data && (
-        <div className="align-elements mt-10">
-          <div className="w-full flex gap-10 rounded-lg p-3 pr-5 bg-[#dcefe4]">
+        <div className="align-elements mt-5 md:mt-10">
+          <div className="w-full flex flex-col md:flex-row gap-10 rounded-lg p-3 pr-5 bg-[#dcefe4]">
             <div className="w-[30%]">
               <img
                 src={data.image}
