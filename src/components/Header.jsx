@@ -23,8 +23,11 @@ function Header() {
         </Link>
         <nav className="flex items-center md:justify-start justify-between w-full md:w-auto">
           <div className="dropdown dropdown-end md:hidden">
-                <GiHamburgerMenu  tabIndex={0}
-              role="button" className=" text-2xl text-white  btn btn-ghost btn-circle avatar p-2"/>
+            <GiHamburgerMenu
+              tabIndex={0}
+              role="button"
+              className=" text-2xl text-white  btn btn-ghost btn-circle avatar p-2"
+            />
             <ul
               tabIndex={0}
               className="menu menu-sm dropdown-content bg-[#28c66f] rounded-box z-[1] w-48 mr-[-130px] mt-3 p-2 shadow"
@@ -35,6 +38,22 @@ function Header() {
                   className="lg:text-lg text-[15px] xl:text-lg text-[#fafeff]"
                 >
                   {t("navbar.home")}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/jurnal-haqida"
+                  className="lg:text-lg text-[15px] xl:text-lg text-[#fafeff]"
+                >
+                  {t("navbar.journalAbout")}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/tahririyat-jamoasi"
+                  className="lg:text-lg text-[15px] xl:text-lg text-[#fafeff]"
+                >
+                  {t("navbar.journalTeam")}
                 </Link>
               </li>
               <li>

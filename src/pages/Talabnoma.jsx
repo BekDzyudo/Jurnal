@@ -2,17 +2,17 @@ import React from "react";
 
 function Talabnoma() {
   return (
-    <div className="align-elements mt-10">
-      <h1 className="text-3xl mb-7 font-semibold text-[#28c66f]">Talabnoma</h1>
-      <div className="flex flex-col gap-5">
+    <div className="align-elements mt-5 md:mt-10">
+      <h1 className="sm:text-3xl text-xl mb-4 sm:mb-7 font-semibold text-[#28c66f]">Talabnoma</h1>
+      <div className="flex flex-col gap-3 sm:gap-5">
         <div className="collapse collapse-arrow bg-[#dcefe4] rounded-lg">
           <input type="checkbox" name="my-accordion-2" defaultChecked />
-          <div className="collapse-title text-xl font-medium">
+          <div className="collapse-title text-[16px] sm:text-xl font-medium">
             “ILM VA TADQIQOT JURNALI”ga taqdim etiladigan maqola
             uchun qo‘yiladigan talablar:
           </div>
           <div className="collapse-content">
-            <p className="text-lg">
+            <p className="text-s sm:text-lg">
               Jurnalga yuborilgan maqolalar pedagogika va siyosatshunoslikka oid
               mavzularda, mazmunan saviyali hamda imlo xatolarisiz bo‘lishi
               lozim. Xalqaro andozalar talabiga ko‘ra, har bir material
@@ -22,11 +22,11 @@ function Talabnoma() {
         </div>
         <div className="collapse collapse-arrow bg-[#dcefe4] rounded-lg">
           <input type="checkbox" name="my-accordion-2" />
-          <div className="collapse-title text-xl font-medium">
+          <div className="collapse-title text-[16px] sm:text-xl font-medium">
             Maqola mavzusi (Title)
           </div>
           <div className="collapse-content">
-            <p className="text-lg">
+            <p className="text-s sm:text-lg">
               Maqola mavzusi 15 so‘zdan oshmagan holda, imkon qadar qisqa va
               lo‘nda ko‘rinishda shakllantirilgan bo‘lib, maqolaning tadqiqot
               yo‘nalishini aniq ifoda etishi lozim.
@@ -35,11 +35,11 @@ function Talabnoma() {
         </div>
         <div className="collapse collapse-arrow bg-[#dcefe4] rounded-lg">
           <input type="checkbox" name="my-accordion-2" />
-          <div className="collapse-title text-xl font-medium">
+          <div className="collapse-title text-[16px] sm:text-xl font-medium">
             Maqola muallifi to‘g‘risida ma’lumot (Author information)
           </div>
           <div className="collapse-content">
-            <p className="text-lg">
+            <p className="text-s sm:text-lg">
               Ushbu qismda muallifning ismi-sharifi (otasining ismi bilan), ish
               joyi va lavozimi, ilmiy darajasi va unvoni, elektron pochta
               manzili va muloqot telefonlari kiritiladi.
@@ -48,11 +48,11 @@ function Talabnoma() {
         </div>
         <div className="collapse collapse-arrow bg-[#dcefe4] rounded-lg">
           <input type="checkbox" name="my-accordion-2" />
-          <div className="collapse-title text-xl font-medium">
+          <div className="collapse-title text-[16px] sm:text-xl font-medium">
             Maqola annotasiyaci (Abstract)
           </div>
           <div className="collapse-content">
-            <p className="text-lg">
+            <p className="text-s sm:text-lg">
               Maqolalarning qisqacha annotasiyasi 10-12 qatordan oshmagan holda,
               o‘zbek, rus va ingliz tillarida beriladi. Unda tadqiqot muammosi,
               uning dolzarbligi, tadqiqot muammosini ochib berish uchun
@@ -64,11 +64,11 @@ function Talabnoma() {
         </div>
         <div className="collapse collapse-arrow bg-[#dcefe4] rounded-lg">
           <input type="checkbox" name="my-accordion-2" />
-          <div className="collapse-title text-xl font-medium">
+          <div className="collapse-title text-[16px] sm:text-xl font-medium">
             Kalit so‘zlar (Key words)
           </div>
           <div className="collapse-content">
-            <p className="text-lg">
+            <p className="text-s sm:text-lg">
               Kalit so‘zlarning umumiy miqdori 7-10 tadan oshmagan holda maqola
               mazmuni va maqsadini eng qisqa mazmunda ochib beruvchi atamalar,
               birikmalardan iborat bo‘lishi hamda har biri asosiy matn tarkibida
@@ -78,11 +78,11 @@ function Talabnoma() {
         </div>
         <div className="collapse collapse-arrow bg-[#dcefe4] rounded-lg">
           <input type="checkbox" name="my-accordion-2" />
-          <div className="collapse-title text-xl font-medium">
+          <div className="collapse-title text-[16px] sm:text-xl font-medium">
             Kirish (Introduction)
           </div>
           <div className="collapse-content">
-            <p className="text-lg">
+            <p className="text-s sm:text-lg">
               Kirish qismida asosan tadqiqot muammosi, uning maqsad va
               vazifalari yoritiladi. Mazkur qism tadqiqot mavzusining tanlanish
               asosi, uning dolzarbligi va ilmiy ahamiyatini tushuntirib beradi
@@ -91,11 +91,11 @@ function Talabnoma() {
         </div>
         <div className="collapse collapse-arrow bg-[#dcefe4] rounded-lg">
           <input type="checkbox" name="my-accordion-2" />
-          <div className="collapse-title text-xl font-medium">
+          <div className="collapse-title text-[16px] sm:text-xl font-medium">
             Mavzuga oid adabiyotlarning tahlili (Literature review)
           </div>
           <div className="collapse-content">
-            <p className="text-lg">
+            <p className="text-s sm:text-lg">
               Adabiyotlar bo‘yicha tahlil asosan sohadagi eng yangi jurnal
               maqolalari va boshqa turdagi ma’lumot manbalarining qay darajada
               o‘rganilganligini aks ettirishi lozim. Mavzuga oid adabiyotlar
@@ -106,11 +106,11 @@ function Talabnoma() {
         </div>
         <div className="collapse collapse-arrow bg-[#dcefe4] rounded-lg">
           <input type="checkbox" name="my-accordion-2" />
-          <div className="collapse-title text-xl font-medium">
+          <div className="collapse-title text-[16px] sm:text-xl font-medium">
             Tadqiqot metodologiyasi (Research Methodology)
           </div>
           <div className="collapse-content">
-            <p className="text-lg">
+            <p className="text-s sm:text-lg">
               Tadqiqot metodologiyasi tadqiqotning eng muhim qismidir. Unda
               tadqiqot yo‘li va natijaga olib boruvchi ma’lumotlar aks
               ettirilishi kerak. Tadqiqot metodologiyasi qismining tarkibida
@@ -128,11 +128,11 @@ function Talabnoma() {
         </div>
         <div className="collapse collapse-arrow bg-[#dcefe4] rounded-lg">
           <input type="checkbox" name="my-accordion-2" />
-          <div className="collapse-title text-xl font-medium">
+          <div className="collapse-title text-[16px] sm:text-xl font-medium">
             Tahlil va natijalar (Analysis and results)
           </div>
           <div className="collapse-content">
-            <p className="text-lg">
+            <p className="text-s sm:text-lg">
               Tadqiqotning tahlil qismida tadqiqot metodologiyasida avvaldan
               belgilab olingan tahlil usullari (matematik modellar va boshqalar)
               orqali yig‘ilgan ma’lumotlarning tahlili amalga oshiriladi. Bunda
@@ -144,11 +144,11 @@ function Talabnoma() {
         </div>
         <div className="collapse collapse-arrow bg-[#dcefe4] rounded-lg">
           <input type="checkbox" name="my-accordion-2" />
-          <div className="collapse-title text-xl font-medium">
+          <div className="collapse-title text-[16px] sm:text-xl font-medium">
             Xulosa va takliflar (Conclusion/Recommendations)
           </div>
           <div className="collapse-content">
-            <p className="text-lg">
+            <p className="text-s sm:text-lg">
               Bu qismda tadqiqotning maqsad, vazifalarining amalga oshganligi
               hamda tadqiqot savollarining o‘z javobini topganligi, tadqiqotning
               asosiy natijalariga va tadqiqotning umumiy jarayoniga umumiy
@@ -160,11 +160,11 @@ function Talabnoma() {
         </div>
         <div className="collapse collapse-arrow bg-[#dcefe4] rounded-lg">
           <input type="checkbox" name="my-accordion-2" />
-          <div className="collapse-title text-xl font-medium">
+          <div className="collapse-title text-[16px] sm:text-xl font-medium">
             Havola (snoska) tartibi (Footnote)
           </div>
           <div className="collapse-content">
-            <p className="text-lg">
+            <p className="text-s sm:text-lg">
               Havola (snoska)lar to‘rtburchak qavs ichiga birinchi maqola
               oxirida keltirilgan adabiyotlar ro‘yxatida joylashgan adabiyot
               tartib raqami, undan so‘ng vergul va probel (bir bo‘sh joy)
@@ -176,11 +176,11 @@ function Talabnoma() {
         </div>
         <div className="collapse collapse-arrow bg-[#dcefe4] rounded-lg">
           <input type="checkbox" name="my-accordion-2" />
-          <div className="collapse-title text-xl font-medium">
+          <div className="collapse-title text-[16px] sm:text-xl font-medium">
             Foydalanilgan adabiyotlar ro‘yxati (References)
           </div>
           <div className="collapse-content">
-            <p className="text-lg">
+            <p className="text-s sm:text-lg">
               Ushbu qismda tadqiqotda foydalanilgan barcha adabiyotlarning
               ro‘yxati avval ilmiy kitob, qo‘llanma, jurnal va dissertasiya,
               keyin internet saytlari (agar foydalanilgan bo‘lsa):
@@ -189,12 +189,12 @@ function Talabnoma() {
         </div>
         <div className="collapse collapse-arrow bg-[#dcefe4] rounded-lg">
           <input type="checkbox" name="my-accordion-2" />
-          <div className="collapse-title text-xl font-medium">
+          <div className="collapse-title text-[16px] sm:text-xl font-medium">
             Mualliflar ism-sharifi, kitob nomi, nashr manzili, nashriyot nomi,
             yili, kitobning umumiy beti
           </div>
           <div className="collapse-content">
-            <p className="text-lg">
+            <p className="text-s sm:text-lg">
               Maqola matni shrifti “Times New Roman”da, 14 kirill yoki lotin
               alfavitida bo‘lib, qatorlar oraliqlari masofasi 1,5 intervalda
               bo‘lishi lozim. Maqola matni sahifasi standart (chap tomonidan

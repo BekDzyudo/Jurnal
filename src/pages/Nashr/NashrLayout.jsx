@@ -1,21 +1,39 @@
-import React from "react";
-import { NavLink, Outlet } from "react-router-dom";
+import React, { useState } from "react";
+import { NavLink, Outlet, useNavigate } from "react-router-dom";
 import useGetFetch from "../../hooks/useGetFetch";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
+import { FaAngleDown, FaAngleUp } from "react-icons/fa";
 
 function NashrLayout() {
-  const {t} = useTranslation()
+  const navigate = useNavigate()
+  const { t } = useTranslation();
   const {
     data: years,
     isPending,
     error,
-  } = useGetFetch(`${import.meta.env.VITE_BASE_URL}/years/`); 
+  } = useGetFetch(`${import.meta.env.VITE_BASE_URL}/years/`);
+  const handleChange=(e)=>{
+    navigate(e.target.value);
+  }
   return (
     <>
       {error && <p></p>}
       {years && (
-        <div className="align-elements flex gap-5 mt-10">
-          <ul className="w-[20%] flex flex-col gap-3">
+        <div className="align-elements flex flex-col items-center md:items-start md:flex-row gap-5 mt-5">
+          <select className="select select-success text-[green] w-full max-w-xs flex md:hidden text-base" onChange={handleChange}>
+            <option className="text-base" value="/nashrlar" >
+                  {t("nashrlar_page.all_sonlari")}
+            </option>
+            {years?.map((item) => {
+                return (
+                  <option className="text-base" key={item.id} value={`/nashrlar/${item.year}`}>
+                      {item.year}- {t("nashrlar_page.sonlari")}
+                  </option>
+                );
+              })}
+          </select>
+          <ul className="md:w-[30%] lg:w-[20%] flex-col gap-3 hidden md:flex">
             <li>
               <NavLink
                 to={`/nashrlar`}
@@ -28,7 +46,7 @@ function NashrLayout() {
                   }`
                 }
               >
-               {t('nashrlar_page.all_sonlari')}
+                {t("nashrlar_page.all_sonlari")}
               </NavLink>
             </li>
             {years?.map((item) => {
@@ -44,14 +62,14 @@ function NashrLayout() {
                       }`
                     }
                   >
-                    {item.year}- {t('nashrlar_page.sonlari')}
+                    {item.year}- {t("nashrlar_page.sonlari")}
                   </NavLink>
                 </li>
               );
             })}
           </ul>
-          <div className="w-[80%]">
-            <Outlet/>
+          <div className="w-full md:w-[70%] lg:w-[80%]">
+            <Outlet />
           </div>
         </div>
       )}
