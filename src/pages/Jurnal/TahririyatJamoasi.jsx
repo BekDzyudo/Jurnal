@@ -65,7 +65,7 @@ function TahririyatJamoasi() {
                 {
                   data?.tahrir_hayati_azolari.map((item)=>{
                     return(
-                      <li key={item.id} className="border border-b-white py-3 text-xl text-center">
+                      <li key={item.id} className="border border-b-white py-3 text-base text-center">
                         {item.fish}
                       </li>
                     )
@@ -81,7 +81,7 @@ function TahririyatJamoasi() {
                 {
                   data?.jamoatchilik_kengashi_azolari.map((item)=>{
                     return(
-                      <li key={item.id} className="border border-b-white py-3 text-xl text-center">
+                      <li key={item.id} className="border border-b-white py-3 text-base text-center">
                         {item.fish}
                       </li>
                     )
@@ -97,7 +97,7 @@ function TahririyatJamoasi() {
                 {
                   data?.dizayner.map((item)=>{
                     return(
-                      <li key={item.id} className="border border-b-white py-3 text-xl text-center">
+                      <li key={item.id} className="border border-b-white py-3 text-base text-center">
                        {item.fish}
                       </li>
                     )
