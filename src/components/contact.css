@@ -1,0 +1,9 @@
+ .calendar{
+    background: #28c66f;
+    color: white;
+    border-radius: 7px;
+    border: none;
+ }
+ .active{
+    color: green;
+ }
