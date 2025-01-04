@@ -32,7 +32,7 @@ function TahririyatJamoasi() {
                 <div key={item.id} className="w-full flex gap-5 rounded-lg p-3 bg-[#dcefe4]">
                   <div className="w-[30%]">
                     <img
-                      src={person}
+                      src={item.image}
                       className="rounded-md h-auto object-cover"
                     />
                   </div>
