@@ -36,12 +36,37 @@ function Home() {
     isPending,
     error,
   } = useGetFetch(`${import.meta.env.VITE_BASE_URL}/yangiliklar/`);
+  const month = [
+    "Yanvar",
+    "Fevral",
+    "Mart",
+    "Aprel",
+    "May",
+    "Iyun",
+    "Iyul",
+    "Avgust",
+    "Sentabr",
+    "Oktabr",
+    "Noyabr",
+    "Dekabr",
+  ];
+  const day = [
+    "Dushanba",
+    "Seshanba",
+    "Chorshanba",
+    "Payshanba",
+    "Juma",
+    "Shanba",
+    "Yakshanba"
+  ]
+  let d = new Date()
 
   return (
     <div>
       <section style={{zIndex: -1}} className="align-elements pt-2">
         <p className="text-[green] text-center font-[600px] sm:hidden">{t('home_page.welcome')}</p>
-        <marquee direction="right" behavior="alternate" className="hidden sm:flex md:tracking-widest text-[green]">{t('home_page.welcome')}</marquee>
+        <marquee direction="right" behavior="alternate" className="hidden sm:flex md:tracking-widest text-[green]">{day[d.getDay()-1] + ", " + month[d.getMonth()] + " " 
+        + `${d.getDate() < 10 ? "0"+d.getDate() : d.getDate()}` + ", " + d.getFullYear() + " | " + t('home_page.welcome')}</marquee>
       </section>
       <section className="h-[500px] w-full mb-10 md:mb-24 ml-[-2px]">
         <img src={banner} alt="" className="h-full w-full" />

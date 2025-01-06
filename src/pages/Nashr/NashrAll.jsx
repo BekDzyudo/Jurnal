@@ -1,16 +1,19 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import useGetFetch from "../../hooks/useGetFetch";
 import { useTranslation } from "react-i18next";
+import { JurnalContext } from "../../context/Context";
 
 function NashrAll() {
   const {t} = useTranslation()
+  const {lang} = useContext(JurnalContext)
+
   const {
     data: nashr,
     isPending,
     error,
   } = useGetFetch(
-    `${import.meta.env.VITE_BASE_URL}/nashrlar/?year_nashr__year=barchasi`
+    `${import.meta.env.VITE_BASE_URL}/nashrlar/?year_nashr__year=barchasi`, lang
   );
 
   return (
@@ -54,19 +57,6 @@ function NashrAll() {
                     <span className="text-[green] font-medium">
                       {item.year_nashr.year}-yil {item.soni}-soni
                     </span>
-                    {/* <span className="text-[green] font-medium">
-                      {new Date(item.created_at).getDate() < 10
-                        ? "0" + new Date(item.created_at).getDate()
-                        : new Date(item.created_at).getDate()}
-                      .
-                      {new Date(item.created_at).getMonth() < 10
-                        ? "0" + new Date(item.created_at).getMonth() + 1
-                        : new Date(item.created_at).getMonth() + 1}
-                      .
-                      {new Date(item.created_at).getFullYear() < 10
-                        ? "0" + new Date(item.created_at).getFullYear()
-                        : new Date(item.created_at).getFullYear()}
-                    </span> */}
                   </div>
                 </div>
               </Link>

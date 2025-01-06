@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { FaAngleDown } from "react-icons/fa";
 import { FaAngleUp } from "react-icons/fa";
@@ -6,11 +6,15 @@ import { HashLink } from "react-router-hash-link";
 import { useTranslation } from "react-i18next";
 import i18n from "../locales/i18n/i18n.jsx";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { JurnalContext } from "../context/Context.jsx";
 
 function Header() {
   const { t } = useTranslation();
+  const {setLang} = useContext(JurnalContext)
+  
   function changeLanguage(e) {
     i18n.changeLanguage(e.target.value);
+    setLang(e.target.value)
   }
   return (
     <div className={`bg-[#28c66f] py-5`}>

@@ -1,19 +1,25 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import useGetFetch from "../../hooks/useGetFetch";
 import { useTranslation } from "react-i18next";
+import { JurnalContext } from "../../context/Context";
 
 function NashrDetail() {
   const {t} = useTranslation()
   const { id } = useParams();
+  const {lang} = useContext(JurnalContext)
   
   const {
     data: nashr,
     isPending,
     error,
   } = useGetFetch(
-    `${import.meta.env.VITE_BASE_URL}/nashrlar/?year_nashr__year=${id}`
+    `${import.meta.env.VITE_BASE_URL}/nashrlar/?year_nashr__year=${id}`, lang
   );
+
+  // const { data: nashr, isPending, error } = useGetFetch(
+  //   `http://192.168.101.175:8000/api/nashrlar/?year_nashr__year=${id}`, lang
+  // );
 
   return (
     <>

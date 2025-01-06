@@ -1,13 +1,22 @@
-import React from "react";
+import React, { useContext, useEffect } from "react";
 import { Link } from "react-router-dom";
 import useGetFetch from "../../hooks/useGetFetch";
 import { useTranslation } from "react-i18next";
+import { JurnalContext } from "../../context/Context";
 
 function Yangiliklar() {
   const {t} = useTranslation()
+  const {lang} = useContext(JurnalContext)
+  
+  
   const { data, isPending, error } = useGetFetch(
-    `${import.meta.env.VITE_BASE_URL}/yangiliklar/`
+    `${import.meta.env.VITE_BASE_URL}/yangiliklar/`, lang
   );
+
+  // const { data, isPending, error } = useGetFetch(
+  //   `http://192.168.101.175:8000/api/yangiliklar/`, lang
+  // );
+  
   return (
     <>
       {isPending && (
@@ -41,7 +50,7 @@ function Yangiliklar() {
                   </figure>
                   <div className="p-3 flex flex-col gap-3">
                     <h2 className="text-center text-base font-semibold">
-                      {item.title.slice(0, 78)}...
+                      { item.title.slice(0, 78)}...
                     </h2>
                     <div className="card-actions justify-center">
                       <button className="btn btn-sm bg-[#28c66f] hover:bg-[#1bd66c] text-white border-none w-[50%] text-base">

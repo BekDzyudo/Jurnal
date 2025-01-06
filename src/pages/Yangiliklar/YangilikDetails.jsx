@@ -1,13 +1,20 @@
-import React from "react";
+import React, { useContext } from "react";
 import news3 from "../../assets/news3.jpg";
 import { useParams } from "react-router-dom";
 import useGetFetch from "../../hooks/useGetFetch";
+import { JurnalContext } from "../../context/Context";
 
 function YangilikDetails() {
   const { id } = useParams();
+  const {lang} = useContext(JurnalContext)
+
   const { data, isPending, error } = useGetFetch(
-    `${import.meta.env.VITE_BASE_URL}/yangiliklar/${id}`
+    `${import.meta.env.VITE_BASE_URL}/yangiliklar/${id}`, lang
   );
+
+  // const { data, isPending, error } = useGetFetch(
+  //   `http://192.168.101.175:8000/api/yangiliklar/${id}`, lang
+  // );
 
   const monthArr = [
     "yanvar",

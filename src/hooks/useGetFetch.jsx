@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-function useGetFetch(url) {
+function useGetFetch(url, language) {
   const [data, setData] = useState(null);
   const [isPending, setIsPending] = useState(false);
   const [error, setError] = useState(null);
@@ -9,7 +9,13 @@ function useGetFetch(url) {
     const fetchData = async () => {
       setIsPending(true);
       try {
-        const req = await fetch(url);
+        const req = await fetch(url, {
+          method: "GET",
+          headers: {
+            "Accept-Language": language,
+            "Content-Type": "application/json"
+          }
+        });
         if (!req.ok) {
           throw new Error(req.statusText);
         }
@@ -24,7 +30,7 @@ function useGetFetch(url) {
     };
     fetchData();
     
-  }, [url]);
+  }, [url, language]);
 
   return { data, isPending, error };
 }
