@@ -31,7 +31,7 @@ function Contact() {
                 {" "}
                 <FaPhoneSquareAlt />{" "}
               </span>
-              <span className="xl:text-xl md:text-base">+99871 207-03-43</span>
+              <span className="xl:text-xl md:text-base">+99877 322-60-60</span>
             </div>
             <div className="flex justify-center items-center gap-3">
               <span className="text-4xl text-[#28c66f]">
@@ -39,7 +39,7 @@ function Contact() {
                 <MdMarkEmailUnread />{" "}
               </span>
               <span className="xl:text-xl md:text-base">
-                info@esijournal.uz
+              ilmvatadqiqot@gmail.com
               </span>
             </div>
             <div className="flex justify-center items-center gap-3">

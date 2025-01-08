@@ -17,7 +17,7 @@ function Footer() {
                </div>
                <div>
                 <h2 className='font-medium text-[#fafeff]'>Telegram:</h2>
-                <p className='text-[#fafeff]'>+99871 207-03-43</p>
+                <p className='text-[#fafeff]'>+99877 322-60-60</p>
                </div>
             </li>
             <li className='flex items-center gap-3'>
