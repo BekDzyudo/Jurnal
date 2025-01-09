@@ -8,6 +8,7 @@ function TahririyatJamoasi() {
   const { data, isPending, error } = useGetFetch(
     `${import.meta.env.VITE_BASE_URL}/type-tahririyat/`
   );
+console.log(data);
 
   return (
     <>
@@ -21,7 +22,7 @@ function TahririyatJamoasi() {
           Ma'lumotlar yuklanmadi
         </p>
       )}
-      {data && (
+      {data != {} && (
         <div className="align-elements mt-5 md:mt-10">
           <h1 className="md:text-3xl text-xl mb-5 font-semibold text-[#28c66f]">
           {t('journal_page.journalTeamTitle1')}

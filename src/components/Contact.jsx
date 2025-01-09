@@ -42,20 +42,21 @@ function Contact() {
               ilmvatadqiqot@gmail.com
               </span>
             </div>
-            <div className="flex justify-center items-center gap-3">
+            <Link to="https://www.facebook.com/profile.php?id=61571405716987" target="_blank" className="flex justify-center items-center gap-3">
               <span className="text-4xl text-[#28c66f]">
                 {" "}
                 <FaFacebookSquare />{" "}
               </span>
-              <span className="xl:text-xl md:text-base">fb.com/jurnal</span>
-            </div>
+              <span className="xl:text-xl md:text-base">facebook</span>
+            </Link>
           </div>
         </div>
         <div className="md:w-[20%] w-52 flex flex-col items-center">
           <img className="w-full h-full mb-5" src={qr} alt="" />
           <Link
+          target="_blank"
             to="https://t.me/ilm_va_tadqiqot_bot"
-            className="text-2xl text-center text-green-700 hover:text-green-600"
+            className="text-2xl text-center text-green-700 hover:text-green-600 link"
           >
             Telegram bot
           </Link>

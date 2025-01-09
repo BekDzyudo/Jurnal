@@ -15,6 +15,7 @@ function NashrAll() {
   } = useGetFetch(
     `${import.meta.env.VITE_BASE_URL}/nashrlar/?year_nashr__year=barchasi`, lang
   );
+  
 
   return (
     <>

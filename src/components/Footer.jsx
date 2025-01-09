@@ -5,6 +5,7 @@ import { IoLocation } from "react-icons/io5";
 import { FaTelegramPlane } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 
 function Footer() {
    const {t} = useTranslation()
@@ -16,8 +17,7 @@ function Footer() {
                 <FaTelegramPlane className='text-xl text-[#28c66f]'/>
                </div>
                <div>
-                <h2 className='font-medium text-[#fafeff]'>Telegram:</h2>
-                <p className='text-[#fafeff]'>+99877 322-60-60</p>
+                <Link  to="https://t.me/ilm_va_tadqiqot_bot" className='font-medium text-[#fafeff] link'>Telegram</Link>
                </div>
             </li>
             <li className='flex items-center gap-3'>
@@ -25,8 +25,7 @@ function Footer() {
                 <FaInstagram className='text-xl text-[#28c66f]'/>
                </div>
                <div>
-                <h2 className='font-medium text-[#fafeff]'>Instagram:</h2>
-                <p className='text-[#fafeff]'>info@esijournal.uz</p>
+                <Link to="https://www.instagram.com/ilm_va_tadqiqot/" className='font-medium text-[#fafeff] link'>Instagram</Link>
                </div>
             </li>
             <li className='flex items-center gap-3'>
