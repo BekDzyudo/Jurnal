@@ -4,7 +4,7 @@ import "react-multi-carousel/lib/styles.css";
 import { GiCheckMark } from "react-icons/gi";
 import index1 from "../assets/index1.jpg";
 import index3 from "../assets/index3.png";
-import banner from "../assets/bannerYashil.png";
+import banner from "../assets/banner1.png";
 import { Link } from "react-router-dom";
 import useGetFetch from "../hooks/useGetFetch";
 import { Contact } from "../components";
@@ -69,6 +69,7 @@ function Home() {
         + `${d.getDate() < 10 ? "0"+d.getDate() : d.getDate()}` + ", " + d.getFullYear() + " | " + t('home_page.welcome')}</marquee>
       </section>
       <section className="h-[500px] w-full mb-10 md:mb-24 ml-[-2px]">
+        <h1 className="absolute top-1/3 left-[5%] text-white font-bold text-6xl tracking-wider">FAN VA SAN'AT <br /> JURNALI</h1>
         <img src={banner} alt="" className="h-full w-full" />
       </section>
       <section className="align-elements">
