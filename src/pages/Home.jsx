@@ -69,7 +69,7 @@ function Home() {
         + `${d.getDate() < 10 ? "0"+d.getDate() : d.getDate()}` + ", " + d.getFullYear() + " | " + t('home_page.welcome')}</marquee>
       </section>
       <section className="h-[500px] w-full mb-10 md:mb-24 ml-[-2px]">
-        <h1 className="absolute top-1/3 left-[5%] text-white font-bold text-6xl tracking-wider">FAN VA SAN'AT <br /> JURNALI</h1>
+        <h1 className="absolute top-1/3 left-[5%] text-white font-bold text-6xl tracking-wider max-w-[40%]">{t('home_page.bannerName')}</h1>
         <img src={banner} alt="" className="h-full w-full" />
       </section>
       <section className="align-elements">

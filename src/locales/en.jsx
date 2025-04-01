@@ -9,12 +9,13 @@ export const en = {
             talabnoma: "Application",
             news: "News",
             contact: "Contact",
-            logo: "JOURNAL OF SCIENCE AND RESEARCH"
+            logo: "SCIENCE AND ART"
         },
         footer:{
             manzil: "Address"
         },
         home_page:{
+            bannerName: "SCIENCE AND ARTS MAGAZINE",
             welcome: "WELCOME TO SCIENCE AND RESEARCH JOURNAL WEBSITE",
             indexTitle: "Indexing in international databases",
             newsTitle: "News",

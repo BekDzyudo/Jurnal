@@ -15,6 +15,7 @@ export const uz = {
             manzil: "Manzil"
         },
         home_page:{
+            bannerName: "FAN VA SAN'AT JURNALI",
             welcome: "ILM VA TADQIQOT JURNALI SAYTIGA XUSH KELIBSIZ",
             indexTitle: "Xalqaro bazalarda indekslanishi",
             newsTitle: "Yangiliklar",
