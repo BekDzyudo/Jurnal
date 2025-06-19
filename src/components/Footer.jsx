@@ -34,7 +34,7 @@ function Footer() {
             </div>
                <div>
                 <h2 className='font-medium text-[#fafeff]'>{t('footer.manzil')}:</h2>
-                <p className='text-[#fafeff]'>Toshkent sh, Shifonur k, 75 uy</p>
+                <p className='text-[#fafeff]'>Samarqand vil, Bulung‘ur tum, Yangiariq MCG, Bahor ko‘cha 68</p>
                </div>
             </li>
         </ul>
