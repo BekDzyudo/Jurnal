@@ -9,14 +9,14 @@ export const uz = {
             talabnoma: "Talabnoma",
             news: "Yangiliklar",
             contact: "Bog'lanish",
-            logo: "ILM VA TADQIQOT JURNALI"
+            logo: "FAN VA SAN'AT JURNALI"
         },
         footer:{
             manzil: "Manzil"
         },
         home_page:{
             bannerName: "FAN VA SAN'AT JURNALI",
-            welcome: "ILM VA TADQIQOT JURNALI SAYTIGA XUSH KELIBSIZ",
+            welcome: "FAN VA SAN'AT JURNALI SAYTIGA XUSH KELIBSIZ",
             indexTitle: "Xalqaro bazalarda indekslanishi",
             newsTitle: "Yangiliklar",
             contactTitle: "Biz bilan aloqa",

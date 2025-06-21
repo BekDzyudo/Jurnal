@@ -9,14 +9,14 @@ export const en = {
             talabnoma: "Application",
             news: "News",
             contact: "Contact",
-            logo: "SCIENCE AND ART"
+            logo: "SCIENCE AND ART MAGAZINE"
         },
         footer:{
             manzil: "Address"
         },
         home_page:{
             bannerName: "SCIENCE AND ARTS MAGAZINE",
-            welcome: "WELCOME TO SCIENCE AND RESEARCH JOURNAL WEBSITE",
+            welcome: "WELCOME TO THE SCIENCE AND ARTS MAGAZINE WEBSITE",
             indexTitle: "Indexing in international databases",
             newsTitle: "News",
             contactTitle: "Contact us",
