@@ -12,6 +12,7 @@ function Yangiliklar() {
   const { data, isPending, error } = useGetFetch(
     `${import.meta.env.VITE_BASE_URL}/yangiliklar/`, lang
   );
+console.log("0" + (new Date(data[0].created_at).getMonth() + 1));
 
   // const { data, isPending, error } = useGetFetch(
   //   `http://192.168.101.175:8000/api/yangiliklar/`, lang
@@ -64,7 +65,7 @@ function Yangiliklar() {
                           : new Date(item.created_at).getDate()}
                         .
                         {new Date(item.created_at).getMonth() < 10
-                          ? "0" + new Date(item.created_at).getMonth() + 1
+                          ? "0" + (new Date(item.created_at).getMonth() + 1)
                           : new Date(item.created_at).getMonth() + 1}
                         .
                         {new Date(item.created_at).getFullYear() < 10
