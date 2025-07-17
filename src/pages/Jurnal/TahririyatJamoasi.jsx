@@ -27,7 +27,7 @@ console.log(data);
           <h1 className="md:text-3xl text-xl mb-5 font-semibold text-[#28c66f]">
           {t('journal_page.journalTeamTitle1')}
           </h1>
-          <div className="row w-full grid grid-cols-1 md:grid-cols-2 gap-5 mb-10 md:mb-20">
+          <div className="row w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mb-10 md:mb-20">
             {data?.tahririyat_jamoasi?.map((item) => {
               return (
                 <div key={item.id} className="w-full flex gap-5 rounded-lg p-3 bg-[#dcefe4]">
